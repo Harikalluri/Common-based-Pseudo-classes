@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: khaki;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            height: 50px;
+            width: 100%;
+            background-color: black;
+            color: whitesmoke;
+        }
+        nav>div:nth-child(2){
+            display: flex;
+            justify-content: space-evenly;
+            width: 40%;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        li{
+            list-style: none;
+        }
+        input{
+            padding: 5px 20px;
+        }
+        #transform{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            margin: 200px auto;
+            transition: transform 3s linear 0.1s;
+        }
+        #transform:hover{
+            transform: rotate(360deg);
+            transform: translateX(300px);
+            transform: translateY(-400px);
+            transform: translate(300px, 200px);
+            transform: scaleX(2);
+            transform: scaleY(3);
+            transform: scale(4,2);
+            transform: skewX(30deg);
+            transform: skewY(50deg);
+            transform: skew(30deg, 12deg);
+            transform: translate(-200px) rotate(270deg) scale(0.5);
+        }
+    </style>
+</head>
+<body>
+    
+
+    <header>
+        <nav>
+            <div id="home">
+                <img src="coffee" alt="" height="50px" width="50px">
+            </div>
+            <div id="content">
+                <li><a href="">Products</a></li>
+                <li><a href="">Services</a></li>
+                <input type="text" placeholder="search">
+                <li><a href="">Cart</a></li>
+            </div>
+        </nav>
+    </header>
+
+    <div id="transform">
+
+    </div>
+</body>
+</html>
